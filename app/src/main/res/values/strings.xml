@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Checked-In</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+    <string-array name="facilities">
+        <item>1.Free Wifi</item>
+        <item>2.Spa</item>
+        <item>3.Swimming Pool</item>
+        <item>4.Free Parking</item>
+        <item>5.Room Service</item>
+        <item>6.Healthy Breakfast</item>
+        <item>7.Ample Wall Outlets</item>
+    </string-array>
+
+    <string-array name="id_proof">
+        <item>Adhar Card</item>
+        <item>Passport</item>
+        <item>Driving License</item>
+        <item>Voter Id</item>
+    </string-array>
+
+    <string-array name="payment_methods">
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+    </string-array>
+</resources>

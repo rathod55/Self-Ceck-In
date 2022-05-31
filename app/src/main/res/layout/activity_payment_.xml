@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Payment_Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:fontFamily="serif-monospace"
+
+            />
+
+            <TextView
+                android:id="@+id/hotel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"/>
+            <TextView
+                android:id="@+id/hotel_name_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel"
+                android:textStyle="italic"
+                android:fontFamily="serif-monospace"/>
+            <TextView
+                android:id="@+id/hotel_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Name"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"/>
+            <TextView
+                android:id="@+id/hotel_customer_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="italic"
+                android:fontFamily="serif-monospace"/>
+            <TextView
+                android:id="@+id/number_of_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Days"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"/>
+            <TextView
+                android:id="@+id/days_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Days"
+                android:textStyle="italic"
+                android:fontFamily="serif-monospace"/>
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date and TIme"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"/>
+            <TextView
+                android:id="@+id/date_time_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date and Time"
+                android:textStyle="italic"
+                android:fontFamily="serif-monospace"/>
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payable Amount"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"/>
+            <TextView
+                android:id="@+id/price_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textStyle="italic"
+                android:fontFamily="serif-monospace"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Select_Payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_view"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:padding="3dp"
+        android:layout_marginStart="5dp"
+        android:background="@android:color/white"
+        android:text="Select Payment Method"
+        />
+    <Spinner
+        android:id="@+id/payment_select_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_below="@+id/Select_Payment"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_select_spinner"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:layout_height="48dp"
+                android:layout_width="match_parent"
+                tools:ignore="LabelFor,NegativeMargin"
+                android:textSize="14sp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:padding="16dp"
+                android:inputType="phone"
+                android:hint="Card number"
+                android:drawableRight="@drawable/ic_card_number"
+                android:background="@drawable/bg_card_number_edit_text"
+                android:layout_marginBottom="-0.25dp"
+                android:id="@+id/cardNumberEditText"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardNumberEditText"
+                android:orientation="horizontal"
+                tools:ignore="NegativeMargin">
+
+
+                <EditText
+                    android:layout_height="48dp"
+                    android:layout_width="150dp"
+                    tools:ignore="LabelFor,RtlHardcoded"
+                    android:textSize="14sp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColor="@android:color/black"
+                    android:padding="16dp"
+                    android:inputType="date"
+                    android:hint="MM/YY"
+                    android:drawableRight="@drawable/ic_card_date"
+                    android:background="@drawable/bg_card_date_edit_text"
+                    android:id="@+id/cardDateEditText"
+                    android:layout_weight="1"
+                    android:layout_marginRight="-0.25dp"/>
+
+                <EditText android:layout_height="48dp"
+                    android:layout_width="100dp"
+                    tools:ignore="LabelFor,RtlHardcoded"
+                    android:textSize="14sp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColor="@android:color/black"
+                    android:padding="16dp"
+                    android:inputType="number"
+                    android:hint="CVC"
+                    android:drawableRight="@drawable/ic_card_cvc"
+                    android:background="@drawable/bg_card_cvc_edit_text"
+                    android:id="@+id/cardCVCEditText"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="-0.25dp"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/confirm_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Payment"
+        android:background="@color/whiteTextColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+
+</RelativeLayout>

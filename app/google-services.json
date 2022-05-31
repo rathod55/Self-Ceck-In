@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279354463644",
+    "project_id": "self-check-in-hotel",
+    "storage_bucket": "self-check-in-hotel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279354463644:android:6a54f7ec3af0f21dc8a459",
+        "android_client_info": {
+          "package_name": "com.abhirathore.checked_in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279354463644-13ir18c0ipnm5mn5tmt4ae8ggbhb7b4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVv2XwckxKk4ij2Sxd6FAbWNUmqnNinik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279354463644-13ir18c0ipnm5mn5tmt4ae8ggbhb7b4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/Self_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Self Check In.."
+        android:textSize="90dp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        app:cardCornerRadius="5dp"
+        android:backgroundTint="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:text="Enter your location" />
+
+        <EditText
+            android:id="@+id/location_text"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+           android:layout_below="@+id/textView"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/location_icon"
+            android:background="@drawable/textbox_design"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="textPostalAddress" />
+
+            <Button
+                android:id="@+id/search_btton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_text"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="17dp"
+                android:text="Find Hotels"
+                android:textColor="@color/whiteTextColor"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:drawableStart="@drawable/search_icon"
+                android:layout_marginBottom="5dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/linear_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="3dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/whiteTextColor"
+            android:text="Log Out"/>
+
+        <Button
+            android:id="@+id/History"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/whiteTextColor"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="2dp"
+            android:text="History"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
